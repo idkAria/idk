@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="text" id="searchBar" placeholder="Search by name or location...">
+        <button onclick="searchPosts()">Search</button>
+        <button onclick="openPostForm()">Create Post</button>
+    </nav>
 
+    <div id="postForm" class="hidden">
+        <h2>Create a Post</h2>
+        <input type="text" id="name" placeholder="Your Full Name">
+        <input type="text" id="location" placeholder="Your Location">
+        <textarea id="content" placeholder="Write something..."></textarea>
+        <input type="file" id="imageUpload">
+        <button onclick="submitPost()">Post</button>
+    </div>
+
+    <h2>Recent Posts</h2>
+    <div id="postsContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
